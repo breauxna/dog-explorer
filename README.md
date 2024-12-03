@@ -4,8 +4,8 @@ Welcome! This is the codebase for exploring dog breed info
 
 ## Build instructions
 
-- yarn
-- yarn dev
+- `yarn`
+- `yarn dev`
 
 You're all set!
 
