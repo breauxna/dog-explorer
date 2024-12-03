@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Dog Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome! This is the codebase for exploring dog breed info
 
-Currently, two official plugins are available:
+## Build instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- yarn
+- yarn dev
 
-## Expanding the ESLint configuration
+You're all set!
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Development info
 
-- Configure the top-level `parserOptions` property like this:
+This is a [React](https://react.dev/) application, writting in the [Typescript](https://www.typescriptlang.org/) programming language. It uses [Tailwind CSS](https://tailwindcss.com/) for styling and [React Query](https://tanstack.com/query/latest/docs/framework/react/overview) for server state management.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+With this app you can
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Explore dog breeds by paging or searching
+- View detailed breed info
+- Get a random dog image and fact
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+This app aims to be fully accessible as well!
